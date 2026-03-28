@@ -46,10 +46,14 @@ const Index = () => (
               </Button>
             </div>
           </div>
-          <div className="hidden lg:block" style={{ animationDelay: "0.2s" }}>
-            <div className="rounded-2xl border border-primary-foreground/10 bg-primary-foreground/10 p-6 backdrop-blur-sm">
-              <LeadForm compact />
-            </div>
+          <div className="hidden lg:block animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <img
+              src={heroImg}
+              alt="Happy students celebrating graduation at an Indian university campus"
+              width={1024}
+              height={768}
+              className="rounded-2xl shadow-2xl border border-primary-foreground/10"
+            />
           </div>
         </div>
       </div>
