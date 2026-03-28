@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import MainLayout from "@/layouts/MainLayout";
 import Index from "./pages/Index";
 import Colleges from "./pages/Colleges";
+import CollegeDetail from "./pages/CollegeDetail";
 import Admissions from "./pages/Admissions";
 import Predictor from "./pages/Predictor";
 import Courses from "./pages/Courses";
@@ -24,6 +25,7 @@ const App = () => (
           <Route element={<MainLayout />}>
             <Route path="/" element={<Index />} />
             <Route path="/colleges" element={<Colleges />} />
+            <Route path="/colleges/:id" element={<CollegeDetail />} />
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/predictor" element={<Predictor />} />
             <Route path="/courses" element={<Courses />} />
