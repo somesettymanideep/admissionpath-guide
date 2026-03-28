@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, Search, BarChart3, BookOpen, Users, Award, ArrowRight, CheckCircle } from "lucide-react";
+import { GraduationCap, Search, BarChart3, BookOpen, Users, Award, ArrowRight, CheckCircle, Quote, Star } from "lucide-react";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import LeadForm from "@/components/LeadForm";
 import heroImg from "@/assets/hero-students.jpg";
@@ -16,6 +17,13 @@ const stats = [
   { value: "500+", label: "Partner Colleges" },
   { value: "95%", label: "Admission Success" },
   { value: "24/7", label: "Support Available" },
+];
+
+const testimonials = [
+  { name: "Priya Sharma", initials: "PS", course: "B.Tech, VIT Vellore", rating: 5, text: "AdmissionCareerGuide helped me secure admission in VIT when I had almost lost hope. Their counselors were incredibly supportive throughout the process!" },
+  { name: "Rahul Verma", initials: "RV", course: "MBA, Christ University", rating: 5, text: "The college predictor tool was spot-on! I got into my dream college for MBA. The team guided me from application to admission seamlessly." },
+  { name: "Ananya Reddy", initials: "AR", course: "MBBS, Manipal University", rating: 5, text: "I was confused about medical admissions. Their expert counselors explained every option clearly and helped me get a management quota seat at Manipal." },
+  { name: "Karthik Nair", initials: "KN", course: "B.Tech, SRM Chennai", rating: 4, text: "Great experience! The team was transparent about fees and process. Got my admission confirmed within 2 weeks. Highly recommend their services." },
 ];
 
 const Index = () => (
@@ -146,6 +154,42 @@ const Index = () => (
               </div>
             ))}
           </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Testimonials */}
+    <section className="py-16 lg:py-24">
+      <div className="container">
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <h2 className="mb-4 text-3xl font-extrabold text-foreground lg:text-4xl">
+            What Our <span className="text-gradient">Students Say</span>
+          </h2>
+          <p className="text-muted-foreground">
+            Thousands of students have achieved their dream admissions with our guidance.
+          </p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {testimonials.map((t) => (
+            <div key={t.name} className="relative rounded-xl border border-border bg-card p-6 card-elevated">
+              <Quote className="absolute right-4 top-4 h-8 w-8 text-primary/10" />
+              <div className="mb-4 flex gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className={`h-4 w-4 ${i < t.rating ? "fill-yellow-400 text-yellow-400" : "text-muted-foreground/30"}`} />
+                ))}
+              </div>
+              <p className="mb-5 text-sm text-muted-foreground leading-relaxed">"{t.text}"</p>
+              <div className="flex items-center gap-3">
+                <Avatar className="h-10 w-10">
+                  <AvatarFallback className="bg-primary/10 text-sm font-semibold text-primary">{t.initials}</AvatarFallback>
+                </Avatar>
+                <div>
+                  <div className="text-sm font-semibold text-foreground">{t.name}</div>
+                  <div className="text-xs text-muted-foreground">{t.course}</div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
