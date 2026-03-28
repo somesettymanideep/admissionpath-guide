@@ -25,6 +25,7 @@ const App = () => (
           <Route element={<MainLayout />}>
             <Route path="/" element={<Index />} />
             <Route path="/colleges" element={<Colleges />} />
+            <Route path="/colleges/:id" element={<CollegeDetail />} />
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/predictor" element={<Predictor />} />
             <Route path="/courses" element={<Courses />} />
