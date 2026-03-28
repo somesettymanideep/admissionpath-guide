@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { GraduationCap, Search, BarChart3, BookOpen, Users, Award, ArrowRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LeadForm from "@/components/LeadForm";
+import heroImg from "@/assets/hero-students.jpg";
 
 const services = [
   { icon: GraduationCap, title: "Admission Assistance", desc: "Get expert help for direct admissions in top private colleges across India.", link: "/admissions" },
