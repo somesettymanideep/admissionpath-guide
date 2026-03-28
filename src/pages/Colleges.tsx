@@ -56,7 +56,7 @@ const Colleges = () => {
         {/* Results */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {filtered.map((college) => (
-            <div key={college.id} className="rounded-xl border border-border bg-card overflow-hidden card-elevated">
+            <Link to={`/colleges/${college.id}`} key={college.id} className="rounded-xl border border-border bg-card overflow-hidden card-elevated block">
               <img src={college.image} alt={college.name} className="h-44 w-full object-cover" loading="lazy" />
               <div className="p-5">
                 <div className="mb-2 flex items-start justify-between gap-2">
