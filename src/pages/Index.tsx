@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, Search, BarChart3, BookOpen, Users, Award, ArrowRight, CheckCircle } from "lucide-react";
+import { GraduationCap, Search, BarChart3, BookOpen, Users, Award, ArrowRight, CheckCircle, Quote, Star } from "lucide-react";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import LeadForm from "@/components/LeadForm";
 import heroImg from "@/assets/hero-students.jpg";
