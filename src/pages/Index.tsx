@@ -19,6 +19,13 @@ const stats = [
   { value: "24/7", label: "Support Available" },
 ];
 
+const testimonials = [
+  { name: "Priya Sharma", initials: "PS", course: "B.Tech, VIT Vellore", rating: 5, text: "AdmissionCareerGuide helped me secure admission in VIT when I had almost lost hope. Their counselors were incredibly supportive throughout the process!" },
+  { name: "Rahul Verma", initials: "RV", course: "MBA, Christ University", rating: 5, text: "The college predictor tool was spot-on! I got into my dream college for MBA. The team guided me from application to admission seamlessly." },
+  { name: "Ananya Reddy", initials: "AR", course: "MBBS, Manipal University", rating: 5, text: "I was confused about medical admissions. Their expert counselors explained every option clearly and helped me get a management quota seat at Manipal." },
+  { name: "Karthik Nair", initials: "KN", course: "B.Tech, SRM Chennai", rating: 4, text: "Great experience! The team was transparent about fees and process. Got my admission confirmed within 2 weeks. Highly recommend their services." },
+];
+
 const Index = () => (
   <div>
     {/* Hero */}
