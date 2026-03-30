@@ -105,7 +105,7 @@ export const colleges: College[] = [
     location: "Pune, Maharashtra",
     state: "Maharashtra",
     type: "Deemed",
-    courses: ["BBA", "MBA", "Law", "B.Sc"],
+    courses: ["B.Tech", "M.Tech"],
     fees: "₹3L - ₹6L/year",
     feesNum: 300000,
     ranking: 15,
@@ -113,7 +113,7 @@ export const colleges: College[] = [
     placements: "₹10 LPA avg | ₹35 LPA highest",
     cutoff: "SET 65+ percentile",
     image: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=400&h=250&fit=crop",
-    overview: "Symbiosis is renowned for its management, law, and liberal arts programs with excellent campus culture.",
+    overview: "Symbiosis is renowned for its engineering and technology programs with excellent campus culture and industry connections.",
   },
 ];
 
