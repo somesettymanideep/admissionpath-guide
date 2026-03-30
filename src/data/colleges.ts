@@ -1,3 +1,6 @@
+import vitVelloreImg from "@/assets/vit-vellore.webp";
+import srmChennaiImg from "@/assets/srm-chennai.jpg";
+
 export interface College {
   id: string;
   name: string;
@@ -29,7 +32,7 @@ export const colleges: College[] = [
     rating: 4.3,
     placements: "₹8.5 LPA avg | ₹44 LPA highest",
     cutoff: "VITEEE 65+ percentile",
-    image: "https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=250&fit=crop",
+    image: vitVelloreImg,
     overview: "VIT Vellore is a premier private university known for its excellent engineering programs and consistent placement records.",
   },
   {
@@ -45,7 +48,7 @@ export const colleges: College[] = [
     rating: 4.1,
     placements: "₹7.2 LPA avg | ₹41 LPA highest",
     cutoff: "SRMJEEE 70+ percentile",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=250&fit=crop",
+    image: srmChennaiImg,
     overview: "SRM IST is one of India's top-ranked universities offering diverse programs across engineering, medicine, and management.",
   },
   {
