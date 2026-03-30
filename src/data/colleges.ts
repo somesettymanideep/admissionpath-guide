@@ -25,7 +25,7 @@ export const colleges: College[] = [
     location: "Vellore, Tamil Nadu",
     state: "Tamil Nadu",
     type: "Private",
-    courses: ["B.Tech", "M.Tech", "MBA", "MCA"],
+    courses: ["B.Tech", "M.Tech"],
     fees: "₹2.1L - ₹4.5L/year",
     feesNum: 210000,
     ranking: 12,
