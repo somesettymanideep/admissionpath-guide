@@ -8,9 +8,9 @@ import LeadForm from "@/components/LeadForm";
 import heroImg from "@/assets/hero-students.jpg";
 
 const services = [
-  { icon: GraduationCap, title: "Admission Assistance", desc: "Get expert help for direct admissions in top private colleges across India.", link: "/admissions" },
-  { icon: Search, title: "College Finder", desc: "Search and compare 500+ colleges by fees, rankings, placements, and more.", link: "/colleges" },
-  { icon: BarChart3, title: "College Predictor", desc: "Predict your best-fit colleges based on your entrance exam rank or marks.", link: "/predictor" },
+  { icon: GraduationCap, title: "Admission Guidance", desc: "Get counseling support for engineering college admissions across India.", link: "/admissions" },
+  { icon: Search, title: "College Finder", desc: "Search and compare engineering colleges by fees, rankings, placements, and more.", link: "/colleges" },
+  { icon: BarChart3, title: "College Predictor", desc: "Explore colleges that may match your entrance exam rank or marks.", link: "/predictor" },
   { icon: BookOpen, title: "Course Guidance", desc: "Explore career paths after 10th, 12th, or graduation with expert advice.", link: "/courses" },
 ];
 
