@@ -172,7 +172,7 @@ const Index = () => (
             What Our <span className="text-gradient">Students Say</span>
           </h2>
           <p className="text-muted-foreground">
-            Thousands of students have achieved their dream admissions with our guidance.
+            Hear from students who used our counseling services.
           </p>
         </div>
         <Carousel
