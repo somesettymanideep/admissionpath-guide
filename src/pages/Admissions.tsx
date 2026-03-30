@@ -19,7 +19,7 @@ const Admissions = () => (
             Direct Admission Support for Top Private Colleges
           </h1>
           <p className="mb-6 text-lg text-primary-foreground/80">
-            Expert guidance for Management Quota & Direct Admissions in Engineering, Medical, MBA, Law, and more across India.
+            Expert guidance for Management Quota & Direct Admissions in B.Tech and M.Tech Engineering programs across India.
           </p>
           <a href="#inquiry-form">
             <Button size="lg" variant="secondary">
