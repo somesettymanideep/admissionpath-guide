@@ -132,12 +132,12 @@ const Index = () => (
             </h2>
             <ul className="space-y-4">
               {[
-                "Expert counselors with 10+ years experience",
-                "Partnerships with 500+ verified colleges",
-                "Transparent process — no hidden fees",
+                "Experienced counselors in engineering admissions",
+                "Information on 100+ engineering colleges",
+                "Transparent counseling process",
                 "Personalized 1-on-1 guidance sessions",
-                "End-to-end application support",
-                "Post-admission support & mentorship",
+                "Application documentation support",
+                "Post-admission mentorship available",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
