@@ -16,10 +16,10 @@ const Admissions = () => (
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="mb-4 text-3xl font-extrabold text-primary-foreground lg:text-5xl">
-            Direct Admission Support for Top Private Colleges
+            Engineering Admission Counseling Services
           </h1>
           <p className="mb-6 text-lg text-primary-foreground/80">
-            Expert guidance for Management Quota & Direct Admissions in B.Tech and M.Tech Engineering programs across India.
+            Professional guidance and counseling for B.Tech and M.Tech admissions in engineering colleges across India.
           </p>
           <a href="#inquiry-form">
             <Button size="lg" variant="secondary">
