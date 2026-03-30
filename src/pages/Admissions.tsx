@@ -57,13 +57,12 @@ const Admissions = () => (
             <h2 className="mb-6 text-3xl font-extrabold text-foreground">Our Admission Services</h2>
             <ul className="space-y-4">
               {[
-                "Direct admission in private engineering colleges (B.Tech)",
-                "M.Tech admission guidance in top universities",
-                "Management quota seat assistance for engineering",
-                "NRI quota & international engineering admissions",
-                "Lateral entry B.Tech admissions",
-                "GATE counseling and M.Tech seat allocation support",
-                "Complete documentation and application handling",
+                "B.Tech admission counseling for private engineering colleges",
+                "M.Tech admission guidance and college information",
+                "NRI quota admission counseling",
+                "Lateral entry B.Tech admission guidance",
+                "GATE counseling and M.Tech seat allocation information",
+                "Documentation and application assistance",
               ].map((s) => (
                 <li key={s} className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
