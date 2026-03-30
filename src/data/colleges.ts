@@ -57,7 +57,7 @@ export const colleges: College[] = [
     location: "Manipal, Karnataka",
     state: "Karnataka",
     type: "Private",
-    courses: ["B.Tech", "M.Tech", "B.Arch"],
+    courses: ["B.Tech", "M.Tech"],
     fees: "₹3L - ₹5.5L/year",
     feesNum: 300000,
     ranking: 8,
