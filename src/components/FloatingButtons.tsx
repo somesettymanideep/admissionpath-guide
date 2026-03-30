@@ -14,12 +14,12 @@ const FloatingButtons = () => {
 
   return (
     <>
-      {/* WhatsApp Button - Left Side */}
+      {/* WhatsApp Button - Right Side */}
       <a
         href="https://wa.me/919876543210"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 left-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110"
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110"
         aria-label="Chat on WhatsApp"
       >
         <svg viewBox="0 0 32 32" className="h-7 w-7 fill-current">
@@ -27,11 +27,11 @@ const FloatingButtons = () => {
         </svg>
       </a>
 
-      {/* Scroll to Top - Right Side */}
+      {/* Scroll to Top - Right Side, above WhatsApp */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-all hover:scale-110"
+          className="fixed bottom-24 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-all hover:scale-110"
           aria-label="Scroll to top"
         >
           <ArrowUp className="h-5 w-5" />
