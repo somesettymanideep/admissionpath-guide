@@ -8,28 +8,28 @@ import LeadForm from "@/components/LeadForm";
 import heroImg from "@/assets/hero-students.jpg";
 
 const services = [
-  { icon: GraduationCap, title: "Admission Assistance", desc: "Get expert help for direct admissions in top private colleges across India.", link: "/admissions" },
-  { icon: Search, title: "College Finder", desc: "Search and compare 500+ colleges by fees, rankings, placements, and more.", link: "/colleges" },
-  { icon: BarChart3, title: "College Predictor", desc: "Predict your best-fit colleges based on your entrance exam rank or marks.", link: "/predictor" },
+  { icon: GraduationCap, title: "Admission Guidance", desc: "Get counseling support for engineering college admissions across India.", link: "/admissions" },
+  { icon: Search, title: "College Finder", desc: "Search and compare engineering colleges by fees, rankings, placements, and more.", link: "/colleges" },
+  { icon: BarChart3, title: "College Predictor", desc: "Explore colleges that may match your entrance exam rank or marks.", link: "/predictor" },
   { icon: BookOpen, title: "Course Guidance", desc: "Explore career paths after 10th, 12th, or graduation with expert advice.", link: "/courses" },
 ];
 
 const stats = [
-  { value: "50,000+", label: "Students Counseled" },
-  { value: "500+", label: "Partner Colleges" },
-  { value: "95%", label: "Admission Success" },
+  { value: "10,000+", label: "Students Guided" },
+  { value: "100+", label: "Colleges Listed" },
+  { value: "10+", label: "Years Experience" },
   { value: "24/7", label: "Support Available" },
 ];
 
 const testimonials = [
-  { name: "Priya Sharma", initials: "PS", course: "B.Tech, VIT Vellore", rating: 5, text: "AdmissionCareerGuide helped me secure admission in VIT when I had almost lost hope. Their counselors were incredibly supportive throughout the process!" },
-  { name: "Karthik Nair", initials: "KN", course: "B.Tech, SRM Chennai", rating: 4, text: "Great experience! The team was transparent about fees and process. Got my admission confirmed within 2 weeks. Highly recommend their services." },
-  { name: "Arjun Mehta", initials: "AM", course: "B.Tech, BITS Pilani", rating: 5, text: "The rank predictor was amazingly accurate. I got personalized college suggestions and the team followed up until I got my admission letter. 10/10 service!" },
-  { name: "Sneha Patel", initials: "SP", course: "M.Tech, IIT Bombay", rating: 5, text: "I was unsure about M.Tech options after my B.Tech. The counselors helped me shortlist the best colleges and guided me through GATE counseling seamlessly!" },
-  { name: "Rahul Verma", initials: "RV", course: "B.Tech, Manipal IT", rating: 5, text: "The college predictor tool was spot-on! I got into my dream college for B.Tech. The team guided me from application to admission seamlessly." },
-  { name: "Riya Gupta", initials: "RG", course: "B.Tech, Amity University", rating: 5, text: "Finding the right engineering college was tough. Their database and counselor expertise made the entire process smooth and stress-free." },
-  { name: "Mohammed Faizan", initials: "MF", course: "M.Tech, NIT Trichy", rating: 5, text: "From GATE preparation guidance to final admission, the support was exceptional. Got into NIT which I thought was out of reach. Best investment I made!" },
-  { name: "Divya Krishnan", initials: "DK", course: "B.Tech, BITS Pilani", rating: 4, text: "Navigating engineering admissions was overwhelming. AdmissionCareerGuide simplified everything and helped me understand all my options clearly." },
+  { name: "Priya S.", initials: "PS", course: "B.Tech Student", rating: 5, text: "The counselors provided helpful guidance during my college search. They explained the admission process clearly and answered all my questions patiently." },
+  { name: "Karthik N.", initials: "KN", course: "B.Tech Student", rating: 4, text: "Good experience with the counseling team. They were transparent about the process and helped me understand my options for engineering colleges." },
+  { name: "Arjun M.", initials: "AM", course: "B.Tech Student", rating: 5, text: "The college comparison tool was very useful. I received personalized suggestions based on my profile and the team was responsive throughout." },
+  { name: "Sneha P.", initials: "SP", course: "M.Tech Student", rating: 5, text: "I was unsure about M.Tech options after B.Tech. The counselors helped me explore different colleges and understand the GATE counseling process." },
+  { name: "Rahul V.", initials: "RV", course: "B.Tech Student", rating: 5, text: "The college information tool helped me compare different options. The counseling team guided me through the application process step by step." },
+  { name: "Riya G.", initials: "RG", course: "B.Tech Student", rating: 5, text: "Finding the right engineering college was confusing. The counselors helped me narrow down options based on my preferences and budget." },
+  { name: "Mohammed F.", initials: "MF", course: "M.Tech Student", rating: 5, text: "The GATE counseling guidance was very informative. The team helped me understand seat allocation and college selection process clearly." },
+  { name: "Divya K.", initials: "DK", course: "B.Tech Student", rating: 4, text: "Navigating engineering admissions was overwhelming. The counseling service simplified things and helped me understand my options clearly." },
 ];
 
 const Index = () => (
@@ -40,13 +40,13 @@ const Index = () => (
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="animate-fade-in-up">
             <span className="mb-4 inline-block rounded-full bg-primary-foreground/20 px-4 py-1.5 text-sm font-medium text-primary-foreground">
-              🎓 India's Trusted Admission Platform
+              🎓 Engineering Admission Counseling Platform
             </span>
             <h1 className="mb-6 text-4xl font-extrabold leading-tight text-primary-foreground lg:text-5xl xl:text-6xl">
-              Your Complete Admission & Career Guidance Partner
+              Your Admission & Career Guidance Partner
             </h1>
             <p className="mb-8 max-w-lg text-lg text-primary-foreground/80">
-              Expert counseling, college predictions, and direct admission support for B.Tech & M.Tech Engineering programs across India.
+              Counseling services, college information, and admission guidance for B.Tech & M.Tech programs across India.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button size="lg" variant="secondary" asChild>
@@ -97,8 +97,8 @@ const Index = () => (
           <h2 className="mb-4 text-3xl font-extrabold text-foreground lg:text-4xl">
             Everything You Need for Your <span className="text-gradient">Education Journey</span>
           </h2>
-          <p className="text-muted-foreground">
-            From finding the right college to securing admission — we've got you covered at every step.
+            <p className="text-muted-foreground">
+            From exploring colleges to understanding the admission process — we're here to help at every step.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -132,12 +132,12 @@ const Index = () => (
             </h2>
             <ul className="space-y-4">
               {[
-                "Expert counselors with 10+ years experience",
-                "Partnerships with 500+ verified colleges",
-                "Transparent process — no hidden fees",
+                "Experienced counselors in engineering admissions",
+                "Information on 100+ engineering colleges",
+                "Transparent counseling process",
                 "Personalized 1-on-1 guidance sessions",
-                "End-to-end application support",
-                "Post-admission support & mentorship",
+                "Application documentation support",
+                "Post-admission mentorship available",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
@@ -172,7 +172,7 @@ const Index = () => (
             What Our <span className="text-gradient">Students Say</span>
           </h2>
           <p className="text-muted-foreground">
-            Thousands of students have achieved their dream admissions with our guidance.
+            Hear from students who used our counseling services.
           </p>
         </div>
         <Carousel

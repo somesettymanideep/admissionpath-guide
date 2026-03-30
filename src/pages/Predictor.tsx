@@ -56,8 +56,8 @@ const Predictor = () => {
             <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-accent">
               <BarChart3 className="h-7 w-7 text-primary" />
             </div>
-            <h1 className="mb-2 text-3xl font-extrabold text-foreground lg:text-4xl">College Predictor Tool</h1>
-            <p className="text-muted-foreground">Enter your entrance exam rank to discover colleges where you have the best chances.</p>
+            <h1 className="mb-2 text-3xl font-extrabold text-foreground lg:text-4xl">College Explorer Tool</h1>
+            <p className="text-muted-foreground">Enter your entrance exam rank to explore colleges that may be a good fit based on past trends.</p>
           </div>
 
           {/* Form */}
@@ -78,7 +78,7 @@ const Predictor = () => {
               </div>
             </div>
             <Button type="submit" className="mt-4 w-full" size="lg">
-              <TrendingUp className="mr-2 h-4 w-4" /> Predict My Colleges
+              <TrendingUp className="mr-2 h-4 w-4" /> Explore Colleges
             </Button>
           </form>
 
@@ -86,7 +86,7 @@ const Predictor = () => {
           {predictions && (
             <div>
               <h2 className="mb-4 text-xl font-bold text-foreground">
-                🎯 Predicted Colleges for {exam} Rank {rank}
+                📋 Suggested Colleges for {exam} Rank {rank}
               </h2>
               <div className="space-y-3">
                 {predictions.map((p) => (
@@ -103,7 +103,7 @@ const Predictor = () => {
                 ))}
               </div>
               <p className="mt-4 text-center text-xs text-muted-foreground">
-                * Predictions are based on past trends and are indicative only. Actual results may vary.
+                * These suggestions are based on past trends and are for informational purposes only. Actual admission outcomes depend on multiple factors and may vary. Please verify with respective colleges.
               </p>
             </div>
           )}

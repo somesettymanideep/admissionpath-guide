@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import LeadForm from "@/components/LeadForm";
 
 const steps = [
-  { icon: Phone, title: "Free Counseling Call", desc: "Speak with our expert counselor to understand your options." },
-  { icon: ClipboardList, title: "Profile Assessment", desc: "We evaluate your marks, preferences, and budget." },
-  { icon: FileText, title: "College Shortlisting", desc: "Get a curated list of colleges matching your profile." },
-  { icon: CheckCircle, title: "Admission Secured", desc: "We handle the entire application and admission process." },
+  { icon: Phone, title: "Free Counseling Call", desc: "Speak with our counselor to understand your options." },
+  { icon: ClipboardList, title: "Profile Assessment", desc: "We review your marks, preferences, and budget." },
+  { icon: FileText, title: "College Shortlisting", desc: "Receive a list of colleges that may match your profile." },
+  { icon: CheckCircle, title: "Application Support", desc: "We assist you with the application and documentation process." },
 ];
 
 const Admissions = () => (
@@ -16,10 +16,10 @@ const Admissions = () => (
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="mb-4 text-3xl font-extrabold text-primary-foreground lg:text-5xl">
-            Direct Admission Support for Top Private Colleges
+            Engineering Admission Counseling Services
           </h1>
           <p className="mb-6 text-lg text-primary-foreground/80">
-            Expert guidance for Management Quota & Direct Admissions in B.Tech and M.Tech Engineering programs across India.
+            Professional guidance and counseling for B.Tech and M.Tech admissions in engineering colleges across India.
           </p>
           <a href="#inquiry-form">
             <Button size="lg" variant="secondary">
@@ -57,13 +57,12 @@ const Admissions = () => (
             <h2 className="mb-6 text-3xl font-extrabold text-foreground">Our Admission Services</h2>
             <ul className="space-y-4">
               {[
-                "Direct admission in private engineering colleges (B.Tech)",
-                "M.Tech admission guidance in top universities",
-                "Management quota seat assistance for engineering",
-                "NRI quota & international engineering admissions",
-                "Lateral entry B.Tech admissions",
-                "GATE counseling and M.Tech seat allocation support",
-                "Complete documentation and application handling",
+                "B.Tech admission counseling for private engineering colleges",
+                "M.Tech admission guidance and college information",
+                "NRI quota admission counseling",
+                "Lateral entry B.Tech admission guidance",
+                "GATE counseling and M.Tech seat allocation information",
+                "Documentation and application assistance",
               ].map((s) => (
                 <li key={s} className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
@@ -111,8 +110,8 @@ const Admissions = () => (
     <section id="inquiry-form" className="py-16">
       <div className="container">
         <div className="mx-auto max-w-2xl">
-          <h2 className="mb-2 text-center text-3xl font-extrabold text-foreground">Start Your Admission Process</h2>
-          <p className="mb-8 text-center text-muted-foreground">Fill in your details and our counselor will reach out within 24 hours.</p>
+          <h2 className="mb-2 text-center text-3xl font-extrabold text-foreground">Request Admission Counseling</h2>
+          <p className="mb-8 text-center text-muted-foreground">Fill in your details and our counselor will get in touch with you.</p>
           <LeadForm />
         </div>
       </div>
