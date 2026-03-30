@@ -56,8 +56,8 @@ const Predictor = () => {
             <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-accent">
               <BarChart3 className="h-7 w-7 text-primary" />
             </div>
-            <h1 className="mb-2 text-3xl font-extrabold text-foreground lg:text-4xl">College Predictor Tool</h1>
-            <p className="text-muted-foreground">Enter your entrance exam rank to discover colleges where you have the best chances.</p>
+            <h1 className="mb-2 text-3xl font-extrabold text-foreground lg:text-4xl">College Explorer Tool</h1>
+            <p className="text-muted-foreground">Enter your entrance exam rank to explore colleges that may be a good fit based on past trends.</p>
           </div>
 
           {/* Form */}
