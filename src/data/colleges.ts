@@ -41,7 +41,7 @@ export const colleges: College[] = [
     location: "Chennai, Tamil Nadu",
     state: "Tamil Nadu",
     type: "Deemed",
-    courses: ["B.Tech", "MBBS", "MBA", "Law"],
+    courses: ["B.Tech", "M.Tech"],
     fees: "₹2.5L - ₹5L/year",
     feesNum: 250000,
     ranking: 18,
