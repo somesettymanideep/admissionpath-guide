@@ -57,7 +57,7 @@ const Colleges = () => {
         {/* Results */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {filtered.map((college) => (
-            <Link to={`/colleges/${college.id}`} key={college.id} className="rounded-xl border border-border bg-card overflow-hidden card-elevated block">
+            <div key={college.id} className="rounded-xl border border-border bg-card overflow-hidden card-elevated">
               <img src={college.image} alt={college.name} className="h-44 w-full object-cover" loading="lazy" />
               <div className="p-5">
                 <div className="mb-2 flex items-start justify-between gap-2">
@@ -87,8 +87,13 @@ const Colleges = () => {
                   <p className="text-xs font-medium text-accent-foreground">📊 Placements: {college.placements}</p>
                   <p className="text-xs text-muted-foreground">Cutoff: {college.cutoff}</p>
                 </div>
+                <Link to={`/colleges/${college.id}`}>
+                  <Button variant="default" className="mt-4 w-full gap-2">
+                    Read More <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
 
