@@ -89,7 +89,7 @@ export const colleges: College[] = [
     location: "Pilani, Rajasthan",
     state: "Rajasthan",
     type: "Deemed",
-    courses: ["B.Tech", "M.Tech", "MBA", "M.Sc"],
+    courses: ["B.Tech", "M.Tech"],
     fees: "₹4.5L - ₹6L/year",
     feesNum: 450000,
     ranking: 5,
