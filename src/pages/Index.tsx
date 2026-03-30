@@ -40,13 +40,13 @@ const Index = () => (
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="animate-fade-in-up">
             <span className="mb-4 inline-block rounded-full bg-primary-foreground/20 px-4 py-1.5 text-sm font-medium text-primary-foreground">
-              🎓 India's Trusted Admission Platform
+              🎓 Engineering Admission Counseling Platform
             </span>
             <h1 className="mb-6 text-4xl font-extrabold leading-tight text-primary-foreground lg:text-5xl xl:text-6xl">
-              Your Complete Admission & Career Guidance Partner
+              Your Admission & Career Guidance Partner
             </h1>
             <p className="mb-8 max-w-lg text-lg text-primary-foreground/80">
-              Expert counseling, college predictions, and direct admission support for B.Tech & M.Tech Engineering programs across India.
+              Counseling services, college information, and admission guidance for B.Tech & M.Tech programs across India.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button size="lg" variant="secondary" asChild>
