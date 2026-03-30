@@ -73,7 +73,7 @@ export const colleges: College[] = [
     location: "Noida, Uttar Pradesh",
     state: "Uttar Pradesh",
     type: "Private",
-    courses: ["B.Tech", "BBA", "Law", "B.Sc"],
+    courses: ["B.Tech", "M.Tech"],
     fees: "₹1.8L - ₹4L/year",
     feesNum: 180000,
     ranking: 25,
