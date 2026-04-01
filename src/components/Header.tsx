@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 const navLinks = [
   { label: "Home", to: "/" },
   { label: "Colleges", to: "/colleges" },
-  { label: "Admissions", to: "/admissions" },
-  { label: "Predictor", to: "/predictor" },
+  { label: "Guidance", to: "/guidance" },
+  { label: "Explorer", to: "/predictor" },
   { label: "Courses", to: "/courses" },
   { label: "News", to: "/news" },
   { label: "Community", to: "/community" },
@@ -22,8 +22,8 @@ const Header = () => {
       {/* Marquee Disclaimer */}
       <div className="bg-primary text-primary-foreground overflow-hidden whitespace-nowrap text-xs py-1">
         <div className="animate-marquee inline-block">
-           <span className="px-8">⚠️ <strong>Disclaimer:</strong> AdmissionCareerGuide is an independent counseling service. We do not guarantee admissions to any institution. All information is for guidance purposes only. Admission decisions are made solely by respective institutions. Please verify all details directly with colleges before making any decisions.</span>
-          <span className="px-8">⚠️ <strong>Disclaimer:</strong> AdmissionCareerGuide is an independent counseling service. We do not guarantee admissions to any institution. All information is for guidance purposes only. Admission decisions are made solely by respective institutions. Please verify all details directly with colleges before making any decisions.</span>
+           <span className="px-8">⚠️ <strong>Disclaimer:</strong> AdmissionCareerGuide is an independent guidance service. We do not process or guarantee admissions. We only help students choose the right college. All decisions are made by students directly with institutions.</span>
+          <span className="px-8">⚠️ <strong>Disclaimer:</strong> AdmissionCareerGuide is an independent guidance service. We do not process or guarantee admissions. We only help students choose the right college. All decisions are made by students directly with institutions.</span>
         </div>
       </div>
     <header className="border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
@@ -56,7 +56,7 @@ const Header = () => {
 
         <div className="hidden md:flex">
           <Button asChild>
-            <Link to="/admissions">Get Free Counseling</Link>
+            <Link to="/guidance">Get Free Guidance</Link>
           </Button>
         </div>
 
@@ -88,8 +88,8 @@ const Header = () => {
               </Link>
             ))}
             <Button asChild className="mt-2">
-              <Link to="/admissions" onClick={() => setMobileOpen(false)}>
-                Get Free Counseling
+              <Link to="/guidance" onClick={() => setMobileOpen(false)}>
+                Get Free Guidance
               </Link>
             </Button>
           </nav>

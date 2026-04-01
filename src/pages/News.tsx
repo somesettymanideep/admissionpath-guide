@@ -4,9 +4,9 @@ import { Badge } from "@/components/ui/badge";
 const news = [
   { title: "JEE Main 2026 Session 2 Registration Opens", date: "March 25, 2026", category: "JEE", desc: "NTA has opened the registration window for JEE Main April 2026 session. Last date to apply is April 10, 2026." },
   { title: "VITEEE 2026 Application Deadline Extended", date: "March 22, 2026", category: "Engineering", desc: "VIT has extended the VITEEE 2026 application deadline. Students can apply until April 5, 2026." },
-  { title: "GATE 2026 Results Expected Soon", date: "March 18, 2026", category: "GATE", desc: "GATE 2026 results are expected to be announced shortly. M.Tech admissions counseling will follow." },
+  { title: "GATE 2026 Results Expected Soon", date: "March 18, 2026", category: "GATE", desc: "GATE 2026 results are expected to be announced shortly. M.Tech college selection counseling will follow." },
   { title: "SRMJEEE 2026 Slot Booking Begins", date: "March 15, 2026", category: "Engineering", desc: "SRM has opened slot booking for SRMJEEE 2026. Candidates can choose preferred exam dates." },
-  { title: "Engineering Colleges Open Admission Inquiries for 2026-27", date: "March 12, 2026", category: "Admission", desc: "Several private engineering colleges have started accepting admission inquiries for the upcoming academic session." },
+  { title: "Engineering Colleges Open Inquiry Window for 2026-27", date: "March 12, 2026", category: "Updates", desc: "Several private engineering colleges have started accepting inquiries for the upcoming academic session." },
   { title: "New NEP Guidelines for Engineering Programs", date: "March 10, 2026", category: "Policy", desc: "UGC releases new guidelines under NEP 2020 for 4-year B.Tech programs." },
 ];
 
@@ -14,7 +14,7 @@ const categoryColors: Record<string, string> = {
   JEE: "bg-primary text-primary-foreground",
   Engineering: "bg-secondary text-secondary-foreground",
   GATE: "bg-primary text-primary-foreground",
-  Admission: "bg-accent text-accent-foreground",
+  Updates: "bg-accent text-accent-foreground",
   Policy: "bg-muted text-muted-foreground",
 };
 
@@ -26,7 +26,7 @@ const News = () => (
           <Bell className="h-6 w-6 text-primary" />
           <h1 className="text-3xl font-extrabold text-foreground lg:text-4xl">News & Updates</h1>
         </div>
-        <p className="text-muted-foreground">Latest admission notifications, exam alerts, and education news.</p>
+        <p className="text-muted-foreground">Latest exam notifications, college updates, and education news to help you stay informed.</p>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-2">
