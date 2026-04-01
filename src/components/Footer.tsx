@@ -13,22 +13,22 @@ const Footer = () => (
             <span className="text-lg font-bold">AdmissionCareerGuide</span>
           </div>
           <p className="text-sm opacity-70">
-            Your trusted partner for admission guidance, career counseling, and college discovery across India.
+            Your trusted partner for college guidance, career counseling, and informed college selection across India.
           </p>
         </div>
 
         <div>
           <h4 className="mb-3 font-semibold">Quick Links</h4>
           <ul className="space-y-2 text-sm opacity-70">
-            <li><Link to="/colleges" className="hover:opacity-100 transition-opacity">Find Colleges</Link></li>
-            <li><Link to="/admissions" className="hover:opacity-100 transition-opacity">Admission Help</Link></li>
-            <li><Link to="/predictor" className="hover:opacity-100 transition-opacity">College Predictor</Link></li>
-            <li><Link to="/courses" className="hover:opacity-100 transition-opacity">Course Guidance</Link></li>
+            <li><Link to="/colleges" className="hover:opacity-100 transition-opacity">Explore Colleges</Link></li>
+            <li><Link to="/guidance" className="hover:opacity-100 transition-opacity">College Guidance</Link></li>
+            <li><Link to="/predictor" className="hover:opacity-100 transition-opacity">College Explorer</Link></li>
+            <li><Link to="/courses" className="hover:opacity-100 transition-opacity">Career Guidance</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="mb-3 font-semibold">Exams</h4>
+          <h4 className="mb-3 font-semibold">Exams We Cover</h4>
           <ul className="space-y-2 text-sm opacity-70">
             <li>JEE Main & Advanced</li>
             <li>VITEEE</li>
@@ -49,7 +49,7 @@ const Footer = () => (
 
       <div className="mt-8 border-t border-primary-foreground/20 pt-6">
         <p className="text-center text-xs opacity-40">
-          © {new Date().getFullYear()} AdmissionCareerGuide. All rights reserved.
+          © {new Date().getFullYear()} AdmissionCareerGuide. All rights reserved. We are a guidance-only platform and do not process admissions.
         </p>
       </div>
     </div>

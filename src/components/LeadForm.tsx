@@ -25,13 +25,13 @@ const LeadForm = ({ compact = false }: { compact?: boolean }) => {
       toast.error("Please fill all required fields");
       return;
     }
-    toast.success("Thank you! Our counselor will contact you shortly.");
+    toast.success("Thank you! Our counselor will contact you shortly with guidance.");
     setFormData({ name: "", phone: "", email: "", course: "" });
   };
 
   return (
     <form onSubmit={handleSubmit} className={`space-y-4 ${compact ? "" : "rounded-xl border border-border bg-card p-6 card-elevated"}`}>
-      {!compact && <h3 className="text-lg font-bold text-foreground">Get Free Counseling</h3>}
+      {!compact && <h3 className="text-lg font-bold text-foreground">Get Free College Guidance</h3>}
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <Label htmlFor="name">Name *</Label>
@@ -57,7 +57,7 @@ const LeadForm = ({ compact = false }: { compact?: boolean }) => {
           </Select>
         </div>
       </div>
-      <Button type="submit" className="w-full">Submit Inquiry</Button>
+      <Button type="submit" className="w-full">Get Guidance</Button>
     </form>
   );
 };

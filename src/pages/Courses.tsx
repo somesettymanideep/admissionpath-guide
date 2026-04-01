@@ -99,9 +99,9 @@ const Courses = () => (
     <section className="py-16">
       <div className="container text-center">
         <h2 className="mb-4 text-2xl font-extrabold text-foreground">Not Sure Which Course to Choose?</h2>
-        <p className="mb-6 text-muted-foreground">Talk to our career experts for personalized guidance.</p>
+        <p className="mb-6 text-muted-foreground">Talk to our career experts for personalized guidance on choosing the right college and stream.</p>
         <Button size="lg" asChild>
-          <Link to="/admissions">Book Free Counseling <ArrowRight className="ml-2 h-4 w-4" /></Link>
+          <Link to="/guidance">Get Free Guidance <ArrowRight className="ml-2 h-4 w-4" /></Link>
         </Button>
       </div>
     </section>

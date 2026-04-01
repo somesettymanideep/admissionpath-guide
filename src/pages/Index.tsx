@@ -8,10 +8,10 @@ import LeadForm from "@/components/LeadForm";
 import heroImg from "@/assets/hero-students.jpg";
 
 const services = [
-  { icon: GraduationCap, title: "Admission Guidance", desc: "Get counseling support for engineering college admissions across India.", link: "/admissions" },
+  { icon: GraduationCap, title: "College Guidance", desc: "Get expert guidance to choose the right engineering college based on your profile.", link: "/guidance" },
   { icon: Search, title: "College Finder", desc: "Search and compare engineering colleges by fees, rankings, placements, and more.", link: "/colleges" },
-  { icon: BarChart3, title: "College Predictor", desc: "Explore colleges that may match your entrance exam rank or marks.", link: "/predictor" },
-  { icon: BookOpen, title: "Course Guidance", desc: "Explore career paths after 10th, 12th, or graduation with expert advice.", link: "/courses" },
+  { icon: BarChart3, title: "College Explorer", desc: "Explore colleges that may match your entrance exam rank or marks.", link: "/predictor" },
+  { icon: BookOpen, title: "Career Guidance", desc: "Explore career paths after 10th, 12th, or graduation with expert advice.", link: "/courses" },
 ];
 
 const stats = [
@@ -22,14 +22,14 @@ const stats = [
 ];
 
 const testimonials = [
-  { name: "Priya S.", initials: "PS", course: "B.Tech Student", rating: 5, text: "The counselors provided helpful guidance during my college search. They explained the admission process clearly and answered all my questions patiently." },
-  { name: "Karthik N.", initials: "KN", course: "B.Tech Student", rating: 4, text: "Good experience with the counseling team. They were transparent about the process and helped me understand my options for engineering colleges." },
+  { name: "Priya S.", initials: "PS", course: "B.Tech Student", rating: 5, text: "The counselors helped me understand which colleges suit my profile best. They explained everything clearly and guided me to make the right choice." },
+  { name: "Karthik N.", initials: "KN", course: "B.Tech Student", rating: 4, text: "Great guidance from the team. They helped me compare different colleges and choose the one that fits my career goals and budget." },
   { name: "Arjun M.", initials: "AM", course: "B.Tech Student", rating: 5, text: "The college comparison tool was very useful. I received personalized suggestions based on my profile and the team was responsive throughout." },
-  { name: "Sneha P.", initials: "SP", course: "M.Tech Student", rating: 5, text: "I was unsure about M.Tech options after B.Tech. The counselors helped me explore different colleges and understand the GATE counseling process." },
-  { name: "Rahul V.", initials: "RV", course: "B.Tech Student", rating: 5, text: "The college information tool helped me compare different options. The counseling team guided me through the application process step by step." },
+  { name: "Sneha P.", initials: "SP", course: "M.Tech Student", rating: 5, text: "I was confused about M.Tech options after B.Tech. The counselors helped me explore different colleges and understand the GATE counseling process." },
+  { name: "Rahul V.", initials: "RV", course: "B.Tech Student", rating: 5, text: "The college information tool helped me compare different options. The guidance team helped me understand the right fit for my career." },
   { name: "Riya G.", initials: "RG", course: "B.Tech Student", rating: 5, text: "Finding the right engineering college was confusing. The counselors helped me narrow down options based on my preferences and budget." },
   { name: "Mohammed F.", initials: "MF", course: "M.Tech Student", rating: 5, text: "The GATE counseling guidance was very informative. The team helped me understand seat allocation and college selection process clearly." },
-  { name: "Divya K.", initials: "DK", course: "B.Tech Student", rating: 4, text: "Navigating engineering admissions was overwhelming. The counseling service simplified things and helped me understand my options clearly." },
+  { name: "Divya K.", initials: "DK", course: "B.Tech Student", rating: 4, text: "Choosing the right college was overwhelming. The guidance service simplified things and helped me understand my options clearly." },
 ];
 
 const Index = () => (
@@ -40,23 +40,23 @@ const Index = () => (
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="animate-fade-in-up">
             <span className="mb-4 inline-block rounded-full bg-primary-foreground/20 px-4 py-1.5 text-sm font-medium text-primary-foreground">
-              🎓 Engineering Admission Counseling Platform
+              🎓 Engineering College Guidance Platform
             </span>
             <h1 className="mb-6 text-4xl font-extrabold leading-tight text-primary-foreground lg:text-5xl xl:text-6xl">
-              Your Admission & Career Guidance Partner
+              Choose the Right College with Expert Guidance
             </h1>
             <p className="mb-8 max-w-lg text-lg text-primary-foreground/80">
-              Counseling services, college information, and admission guidance for B.Tech & M.Tech programs across India.
+              We help students make informed decisions about B.Tech & M.Tech colleges through expert counseling, college comparisons, and career guidance.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button size="lg" variant="secondary" asChild>
-                <Link to="/admissions">Get Free Counseling <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                <Link to="/guidance">Get Free Guidance <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
               <Button size="lg" variant="outline" className="border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20" asChild>
-                <Link to="/colleges">Find Colleges</Link>
+                <Link to="/colleges">Explore Colleges</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20" asChild>
-                <Link to="/predictor">Predict Your College</Link>
+                <Link to="/predictor">College Explorer</Link>
               </Button>
             </div>
           </div>
@@ -98,7 +98,7 @@ const Index = () => (
             Everything You Need for Your <span className="text-gradient">Education Journey</span>
           </h2>
             <p className="text-muted-foreground">
-            From exploring colleges to understanding the admission process — we're here to help at every step.
+            From exploring colleges to understanding career paths — we guide you at every step to choose the right college.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -132,12 +132,12 @@ const Index = () => (
             </h2>
             <ul className="space-y-4">
               {[
-                "Experienced counselors in engineering admissions",
-                "Information on 100+ engineering colleges",
-                "Transparent counseling process",
-                "Personalized 1-on-1 guidance sessions",
-                "Application documentation support",
-                "Post-admission mentorship available",
+                "Expert counselors to help you choose the right college",
+                "Information on 100+ engineering colleges across India",
+                "Transparent and unbiased guidance process",
+                "Personalized 1-on-1 counseling sessions",
+                "College comparison and career path analysis",
+                "Post-enrollment mentorship and career support",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" />
@@ -149,9 +149,9 @@ const Index = () => (
           <div className="grid grid-cols-2 gap-4">
             {[
               { icon: Users, label: "Career Counseling", desc: "Personalized guidance" },
-              { icon: Award, label: "Top Colleges", desc: "Verified partners" },
+              { icon: Award, label: "Top Colleges", desc: "Verified information" },
               { icon: BookOpen, label: "Course Info", desc: "Detailed analysis" },
-              { icon: BarChart3, label: "Predictors", desc: "AI-powered tools" },
+              { icon: BarChart3, label: "College Explorer", desc: "Smart tools" },
             ].map((item) => (
               <div key={item.label} className="rounded-xl border border-border bg-card p-5 text-center card-elevated">
                 <item.icon className="mx-auto mb-2 h-8 w-8 text-primary" />
@@ -172,7 +172,7 @@ const Index = () => (
             What Our <span className="text-gradient">Students Say</span>
           </h2>
           <p className="text-muted-foreground">
-            Hear from students who used our counseling services.
+            Hear from students who used our guidance services.
           </p>
         </div>
         <Carousel
@@ -217,8 +217,8 @@ const Index = () => (
       <div className="container">
         <div className="mx-auto max-w-2xl">
           <div className="text-center mb-8">
-            <h2 className="mb-4 text-3xl font-extrabold text-foreground">Ready to Start Your Journey?</h2>
-            <p className="text-muted-foreground">Fill in your details and our expert counselors will guide you to the right college.</p>
+            <h2 className="mb-4 text-3xl font-extrabold text-foreground">Need Help Choosing the Right College?</h2>
+            <p className="text-muted-foreground">Fill in your details and our expert counselors will help you find the best-fit college for your career goals.</p>
           </div>
           <LeadForm />
         </div>

@@ -44,7 +44,7 @@ const initialQuestions: Question[] = [
     isUpvoted: false,
     answers: [
       { id: 1, author: "Priya Patel", initials: "PP", text: "Last year the VITEEE cutoff for CSE was around rank 5000-8000. With your scores, you have a decent chance. Focus on VITEEE preparation as well.", upvotes: 12, time: "1 hour ago", isUpvoted: false },
-      { id: 2, author: "Amit Kumar", initials: "AK", text: "I got admitted last year with rank 6200. The management quota cutoff is different though. Feel free to DM for more details.", upvotes: 8, time: "45 min ago", isUpvoted: false },
+      { id: 2, author: "Amit Kumar", initials: "AK", text: "I joined last year with rank 6200. Feel free to DM for more details about the college and campus life.", upvotes: 8, time: "45 min ago", isUpvoted: false },
     ],
   },
   {
@@ -64,7 +64,7 @@ const initialQuestions: Question[] = [
   {
     id: 3,
     title: "SRM vs VIT for B.Tech CSE — which is better for placements?",
-    body: "I have admission offers from both SRM Chennai and VIT Vellore for CSE. Which one should I prefer considering placements and campus life?",
+    body: "I'm considering both SRM Chennai and VIT Vellore for CSE. Which one should I prefer considering placements and campus life?",
     author: "Aisha Khan",
     initials: "AK",
     category: "Colleges",
@@ -92,11 +92,11 @@ const initialQuestions: Question[] = [
   },
   {
     id: 5,
-    title: "Lateral entry to B.Tech after diploma — which colleges accept?",
-    body: "I've completed my diploma in Mechanical Engineering with 78%. Which good colleges accept lateral entry for B.Tech?",
+    title: "Lateral entry to B.Tech after diploma — which colleges are good?",
+    body: "I've completed my diploma in Mechanical Engineering with 78%. Which good colleges offer lateral entry for B.Tech?",
     author: "Manish Tiwari",
     initials: "MT",
-    category: "Admissions",
+    category: "College Selection",
     upvotes: 12,
     time: "3 days ago",
     isUpvoted: false,
@@ -104,7 +104,7 @@ const initialQuestions: Question[] = [
   },
 ];
 
-const categories = ["All", "Admissions", "Cutoffs", "Exam Prep", "Colleges", "Placements", "Scholarships"];
+const categories = ["All", "College Selection", "Cutoffs", "Exam Prep", "Colleges", "Placements", "Scholarships"];
 
 const Community = () => {
   const [questions, setQuestions] = useState<Question[]>(initialQuestions);
@@ -114,7 +114,7 @@ const Community = () => {
   const [expandedQuestion, setExpandedQuestion] = useState<number | null>(null);
   const [newAnswer, setNewAnswer] = useState("");
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [newQuestion, setNewQuestion] = useState({ title: "", body: "", category: "Admissions" });
+  const [newQuestion, setNewQuestion] = useState({ title: "", body: "", category: "College Selection" });
 
   const filteredQuestions = questions
     .filter((q) => selectedCategory === "All" || q.category === selectedCategory)
@@ -183,7 +183,7 @@ const Community = () => {
       },
       ...prev,
     ]);
-    setNewQuestion({ title: "", body: "", category: "Admissions" });
+    setNewQuestion({ title: "", body: "", category: "College Selection" });
     setDialogOpen(false);
   };
 
@@ -196,7 +196,7 @@ const Community = () => {
             Student <span className="text-primary">Q&A Community</span>
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-            Ask questions, share experiences, and help fellow students navigate admissions and careers.
+            Ask questions, share experiences, and help fellow students choose the right college and career path.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
             <div className="relative flex-1">
