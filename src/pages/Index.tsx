@@ -90,6 +90,19 @@ const Index = () => (
       </div>
     </section>
 
+    {/* CTA */}
+    <section className="py-16 lg:py-24">
+      <div className="container">
+        <div className="mx-auto max-w-2xl">
+          <div className="text-center mb-8">
+            <h2 className="mb-4 text-3xl font-extrabold text-foreground">Need Help Choosing the Right College?</h2>
+            <p className="text-muted-foreground">Fill in your details and our expert counselors will help you find the best-fit college for your career goals.</p>
+          </div>
+          <LeadForm />
+        </div>
+      </div>
+    </section>
+
     {/* Services */}
     <section className="py-16 lg:py-24">
       <div className="container">
@@ -209,19 +222,6 @@ const Index = () => (
             <CarouselNext className="static translate-y-0" />
           </div>
         </Carousel>
-      </div>
-    </section>
-
-    {/* CTA */}
-    <section className="py-16 lg:py-24">
-      <div className="container">
-        <div className="mx-auto max-w-2xl">
-          <div className="text-center mb-8">
-            <h2 className="mb-4 text-3xl font-extrabold text-foreground">Need Help Choosing the Right College?</h2>
-            <p className="text-muted-foreground">Fill in your details and our expert counselors will help you find the best-fit college for your career goals.</p>
-          </div>
-          <LeadForm />
-        </div>
       </div>
     </section>
   </div>
