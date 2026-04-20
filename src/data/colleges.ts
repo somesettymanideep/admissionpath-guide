@@ -1,5 +1,6 @@
 import vitVelloreImg from "@/assets/vit-vellore.webp";
 import srmChennaiImg from "@/assets/srm-chennai.jpg";
+import amritaImg from "@/assets/amrita-university.jpg";
 
 export interface College {
   id: string;
@@ -130,6 +131,22 @@ export const colleges: College[] = [
     cutoff: "Direct Admission / JEE Main",
     image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&h=250&fit=crop",
     overview: "Kalasalingam Academy (KARE) is a NAAC A++ accredited deemed university known for affordable engineering education and growing placement records.",
+  },
+  {
+    id: "8",
+    name: "Amrita Vishwa Vidyapeetham",
+    location: "Coimbatore, Tamil Nadu",
+    state: "Tamil Nadu",
+    type: "Deemed",
+    courses: ["B.Tech", "M.Tech"],
+    fees: "₹2.8L - ₹5L/year",
+    feesNum: 280000,
+    ranking: 7,
+    rating: 4.4,
+    placements: "₹8 LPA avg | ₹42 LPA highest",
+    cutoff: "AEEE / JEE Main",
+    image: amritaImg,
+    overview: "Amrita Vishwa Vidyapeetham is a NAAC A++ accredited deemed university and one of India's top-ranked institutions, known for excellence in engineering, research, and holistic education.",
   },
 ];
 
